@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Project___ConsoleApp__Library_Management_Application_.Service.Implementation
 {
@@ -21,6 +22,11 @@ namespace Project___ConsoleApp__Library_Management_Application_.Service.Implemen
             if (loan.Borrower is null) throw new ArgumentNullException("Loan is null");
 
             ILoanRepository loanRepository = new LoanRepository();
+
+
+            loan.CreateTime = DateTime.UtcNow.AddHours(4);
+            loan.UpdateAt = DateTime.UtcNow.AddHours(4);
+
             loanRepository.Add(loan);
             loanRepository.Commit();
         }
@@ -34,7 +40,8 @@ namespace Project___ConsoleApp__Library_Management_Application_.Service.Implemen
             if (data is null) throw new NullReferenceException();
             if (id < 1) throw new NotValidException("Id is less than 1");
 
-            loanRepository.Delete(data);
+            data.IsDeleted = true;
+            data.UpdateAt = DateTime.UtcNow.AddHours(4);
             loanRepository.Commit();
         }
 
@@ -70,12 +77,18 @@ namespace Project___ConsoleApp__Library_Management_Application_.Service.Implemen
             if (loan is null) throw new NullReferenceException();
             if (loan.Id < 1) throw new NotValidException();
 
+            loanUpdate.LoanItems = loan.LoanItems;
             loanUpdate.Borrower = loan.Borrower;
-            loanUpdate.BorrowerId = loan.BorrowerId;
+            loanUpdate.LoanTime = loan.LoanTime;
             loanUpdate.ReturnDate = loan.ReturnDate;
             loanUpdate.MustReturnDate = loan.MustReturnDate;
+            loanUpdate.BorrowerId = loan.BorrowerId;
             loanUpdate.CreateTime = loan.CreateTime;
-            loanUpdate.LoanTime = loan.LoanTime;
+            loanUpdate.UpdateAt = loan.UpdateAt;
+            loanUpdate.IsDeleted = loan.IsDeleted;
+
+
+            loanRepository.Commit();
 
         }
     }

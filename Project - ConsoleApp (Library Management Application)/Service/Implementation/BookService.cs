@@ -21,6 +21,11 @@ namespace Project___ConsoleApp__Library_Management_Application_.Service.Implemen
             if(book.PublishedYear <= 0) throw new NotValidException("Published year is less than 0");
 
             IBookRepository bookRepository = new BookRepository();
+
+
+            book.CreateTime = DateTime.UtcNow.AddHours(4);
+            book.UpdateAt = DateTime.UtcNow.AddHours(4);
+
             bookRepository.Add(book);
             bookRepository.Commit();
         }
@@ -31,7 +36,9 @@ namespace Project___ConsoleApp__Library_Management_Application_.Service.Implemen
             var data = bookRepository.GetById(id);
             if (data is null) throw new NotFoundException("Book is not found");
             if (id < 1) throw new NotValidException("Id is less than 1");
-            bookRepository.Delete(data);
+
+            data.IsDeleted = true;
+            data.UpdateAt = DateTime.UtcNow.AddHours(4);
             bookRepository.Commit();
         }
 

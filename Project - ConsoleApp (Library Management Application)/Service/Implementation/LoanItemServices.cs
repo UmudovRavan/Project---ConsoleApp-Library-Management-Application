@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Project___ConsoleApp__Library_Management_Application_.Service.Implementation
 {
@@ -20,6 +21,11 @@ namespace Project___ConsoleApp__Library_Management_Application_.Service.Implemen
             if (loanItem.Loan is null) throw new ArgumentNullException("Loan is null");
 
             ILoanItemRepository loanItemRepository = new LoanItemRepository();
+
+
+            loanItem.CreateTime = DateTime.UtcNow.AddHours(4);
+            loanItem.UpdateAt = DateTime.UtcNow.AddHours(4);
+
             loanItemRepository.Add(loanItem);
             loanItemRepository.Commit();
         }
@@ -32,7 +38,8 @@ namespace Project___ConsoleApp__Library_Management_Application_.Service.Implemen
             if (data is null) throw new NullReferenceException();
             if (id < 1) throw new NotValidException("Id is less than 1");
 
-            loanItemRepository.Delete(data);
+            data.IsDeleted = true;
+            data.UpdateAt = DateTime.UtcNow.AddHours(4);
             loanItemRepository.Commit();
         }
 
@@ -65,13 +72,15 @@ namespace Project___ConsoleApp__Library_Management_Application_.Service.Implemen
             if (loanItem is null) throw new NullReferenceException();
             if (loanItem.Id < 1) throw new NotValidException();
 
+
             loanItemUpdate.Loan = loanItem.Loan;
-            loanItemUpdate.LoanId = loanItem.LoanId;    
+            loanItemUpdate.Book = loanItem.Book;
             loanItemUpdate.UpdateAt = loanItem.UpdateAt;
             loanItemUpdate.CreateTime = loanItem.CreateTime;
             loanItemUpdate.BookId = loanItem.BookId;
-            loanItemUpdate.Book = loanItem.Book;
             loanItemUpdate.IsDeleted = loanItem.IsDeleted;
+
+            loanItemRepository.Commit();
         }
     }
 }

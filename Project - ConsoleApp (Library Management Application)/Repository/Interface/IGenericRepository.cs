@@ -10,8 +10,8 @@ namespace Project___ConsoleApp__Library_Management_Application_.Repository.Inter
     public interface IGenericRepository<T> where T : BaseEntity, new()
     {
         void Add(T entity);
-        T GetById (int id);
-        List<T> GetAll(); 
+        T GetById(int id);
+        List<T> GetAll();
         void Delete(T entity);
         int Commit();
     }

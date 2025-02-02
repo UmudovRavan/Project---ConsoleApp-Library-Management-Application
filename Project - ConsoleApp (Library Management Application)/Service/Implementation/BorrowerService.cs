@@ -21,6 +21,11 @@ namespace Project___ConsoleApp__Library_Management_Application_.Service.Implemen
             if (borrower.Email is null) throw new ArgumentNullException("Email is null");
             
             IBorrowerRepository borrowerRepository = new BorrowerRepository();
+
+
+            borrower.CreateTime = DateTime.UtcNow.AddHours(4);
+            borrower.UpdateAt = DateTime.UtcNow.AddHours(4);
+
             borrowerRepository.Add(borrower);
             borrowerRepository.Commit();
         }
@@ -33,7 +38,8 @@ namespace Project___ConsoleApp__Library_Management_Application_.Service.Implemen
             if (data is null) throw new NullReferenceException();
             if (id < 1) throw new NotValidException("Idis less than 1");
 
-            borrowerRepository.Delete(data);
+            data.IsDeleted = true;
+            data.UpdateAt = DateTime.UtcNow.AddHours(4);
             borrowerRepository.Commit();
         }
 

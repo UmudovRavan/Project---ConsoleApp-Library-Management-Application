@@ -9,4 +9,6 @@ namespace Project___ConsoleApp__Library_Management_Application_.Repository.Inter
 
 public interface ILoanRepository : IGenericRepository<Loan>
 {
+    List<Loan> GetAllByInclude();
+    Loan? GetByIdInclude (int id);
 }

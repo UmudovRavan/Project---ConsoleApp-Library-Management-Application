@@ -28,17 +28,26 @@ namespace Project___ConsoleApp__Library_Management_Application_.Repository.Imple
 
         public void Delete(T entity)
         {
-            _dbContext.Set<T>().Remove(entity);
+            _dbContext
+                .Set<T>()
+                .Remove(entity);
         }
 
         public List<T> GetAll()
         {
-            return _dbContext.Set<T>().ToList();
+            return _dbContext
+                .Set<T>()
+                .Where(x=> !x.IsDeleted)
+                .ToList();
         }
 
         public T GetById(int id)
         {
-            var data = _dbContext.Set<T>().FirstOrDefault(x => x.Id == id);
+            var data = _dbContext
+                .Set<T>()
+                .Where(x => !x.IsDeleted)
+                .FirstOrDefault(x => x.Id == id);
+
             return data;
         }
 

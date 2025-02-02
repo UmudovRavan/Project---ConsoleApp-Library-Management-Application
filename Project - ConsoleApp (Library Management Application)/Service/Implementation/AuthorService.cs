@@ -17,10 +17,12 @@ namespace Project___ConsoleApp__Library_Management_Application_.Service.Implemen
         {
             if (author is null) throw new ArgumentNullException("Author is null");
             if (string.IsNullOrWhiteSpace(author.Name)) throw new ArgumentNullException("Author name is null");
-            if (author.Id < 1) throw new NotValidException("Id is less than 1");
-            if (author.Books is null) throw new NullReferenceException("Book is null");
-
+            
             IAuthorRepository authorRepository = new AuthorRepository();
+
+            author.CreateTime = DateTime.UtcNow.AddHours(4);
+            author.UpdateAt = DateTime.UtcNow.AddHours(4);
+
             authorRepository.Add(author);
             authorRepository.Commit();
         }
@@ -32,7 +34,8 @@ namespace Project___ConsoleApp__Library_Management_Application_.Service.Implemen
             if (data is null) throw new NotFoundException("Not found");
             if (id < 1) throw new NotValidException("Id is less than 1");
 
-            authorRepository.Delete(data);
+            data.IsDeleted = true;
+            data.UpdateAt = DateTime.UtcNow.AddHours(4);
             authorRepository.Commit();
 
         }
