@@ -1,0 +1,239 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ravan\\source\\repos\\Project - ConsoleApp (Library Management Application)\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{60DA394F-537E-41CF-975A-B42361DC38D9}|Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application).csproj|c:\\users\\ravan\\source\\repos\\project - consoleapp (library management application)\\project - consoleapp (library management application)\\service\\implementation\\loanitemservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60DA394F-537E-41CF-975A-B42361DC38D9}|Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application).csproj|solutionrelative:project - consoleapp (library management application)\\service\\implementation\\loanitemservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60DA394F-537E-41CF-975A-B42361DC38D9}|Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application).csproj|c:\\users\\ravan\\source\\repos\\project - consoleapp (library management application)\\project - consoleapp (library management application)\\service\\implementation\\loanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60DA394F-537E-41CF-975A-B42361DC38D9}|Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application).csproj|solutionrelative:project - consoleapp (library management application)\\service\\implementation\\loanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60DA394F-537E-41CF-975A-B42361DC38D9}|Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application).csproj|c:\\users\\ravan\\source\\repos\\project - consoleapp (library management application)\\project - consoleapp (library management application)\\service\\interface\\iloanitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60DA394F-537E-41CF-975A-B42361DC38D9}|Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application).csproj|solutionrelative:project - consoleapp (library management application)\\service\\interface\\iloanitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60DA394F-537E-41CF-975A-B42361DC38D9}|Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application).csproj|c:\\users\\ravan\\source\\repos\\project - consoleapp (library management application)\\project - consoleapp (library management application)\\service\\interface\\iloanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60DA394F-537E-41CF-975A-B42361DC38D9}|Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application).csproj|solutionrelative:project - consoleapp (library management application)\\service\\interface\\iloanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60DA394F-537E-41CF-975A-B42361DC38D9}|Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application).csproj|c:\\users\\ravan\\source\\repos\\project - consoleapp (library management application)\\project - consoleapp (library management application)\\service\\implementation\\borrowerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60DA394F-537E-41CF-975A-B42361DC38D9}|Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application).csproj|solutionrelative:project - consoleapp (library management application)\\service\\implementation\\borrowerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60DA394F-537E-41CF-975A-B42361DC38D9}|Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application).csproj|c:\\users\\ravan\\source\\repos\\project - consoleapp (library management application)\\project - consoleapp (library management application)\\service\\implementation\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60DA394F-537E-41CF-975A-B42361DC38D9}|Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application).csproj|solutionrelative:project - consoleapp (library management application)\\service\\implementation\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60DA394F-537E-41CF-975A-B42361DC38D9}|Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application).csproj|c:\\users\\ravan\\source\\repos\\project - consoleapp (library management application)\\project - consoleapp (library management application)\\service\\interface\\iborrowerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60DA394F-537E-41CF-975A-B42361DC38D9}|Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application).csproj|solutionrelative:project - consoleapp (library management application)\\service\\interface\\iborrowerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60DA394F-537E-41CF-975A-B42361DC38D9}|Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application).csproj|c:\\users\\ravan\\source\\repos\\project - consoleapp (library management application)\\project - consoleapp (library management application)\\service\\interface\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60DA394F-537E-41CF-975A-B42361DC38D9}|Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application).csproj|solutionrelative:project - consoleapp (library management application)\\service\\interface\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60DA394F-537E-41CF-975A-B42361DC38D9}|Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application).csproj|c:\\users\\ravan\\source\\repos\\project - consoleapp (library management application)\\project - consoleapp (library management application)\\service\\implementation\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60DA394F-537E-41CF-975A-B42361DC38D9}|Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application).csproj|solutionrelative:project - consoleapp (library management application)\\service\\implementation\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60DA394F-537E-41CF-975A-B42361DC38D9}|Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application).csproj|c:\\users\\ravan\\source\\repos\\project - consoleapp (library management application)\\project - consoleapp (library management application)\\service\\interface\\iauthorservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60DA394F-537E-41CF-975A-B42361DC38D9}|Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application).csproj|solutionrelative:project - consoleapp (library management application)\\service\\interface\\iauthorservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60DA394F-537E-41CF-975A-B42361DC38D9}|Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application).csproj|c:\\users\\ravan\\source\\repos\\project - consoleapp (library management application)\\project - consoleapp (library management application)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60DA394F-537E-41CF-975A-B42361DC38D9}|Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application).csproj|solutionrelative:project - consoleapp (library management application)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60DA394F-537E-41CF-975A-B42361DC38D9}|Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application).csproj|c:\\users\\ravan\\source\\repos\\project - consoleapp (library management application)\\project - consoleapp (library management application)\\myexception\\common\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60DA394F-537E-41CF-975A-B42361DC38D9}|Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application).csproj|solutionrelative:project - consoleapp (library management application)\\myexception\\common\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60DA394F-537E-41CF-975A-B42361DC38D9}|Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application).csproj|c:\\users\\ravan\\source\\repos\\project - consoleapp (library management application)\\project - consoleapp (library management application)\\myexception\\common\\notvalidexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60DA394F-537E-41CF-975A-B42361DC38D9}|Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application).csproj|solutionrelative:project - consoleapp (library management application)\\myexception\\common\\notvalidexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoanItemServices.cs",
+              "DocumentMoniker": "C:\\Users\\Ravan\\source\\repos\\Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application)\\Service\\Implementation\\LoanItemServices.cs",
+              "RelativeDocumentMoniker": "Project - ConsoleApp (Library Management Application)\\Service\\Implementation\\LoanItemServices.cs",
+              "ToolTip": "C:\\Users\\Ravan\\source\\repos\\Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application)\\Service\\Implementation\\LoanItemServices.cs",
+              "RelativeToolTip": "Project - ConsoleApp (Library Management Application)\\Service\\Implementation\\LoanItemServices.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwEkAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T09:24:08.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ILoanItemService.cs",
+              "DocumentMoniker": "C:\\Users\\Ravan\\source\\repos\\Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application)\\Service\\Interface\\ILoanItemService.cs",
+              "RelativeDocumentMoniker": "Project - ConsoleApp (Library Management Application)\\Service\\Interface\\ILoanItemService.cs",
+              "ToolTip": "C:\\Users\\Ravan\\source\\repos\\Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application)\\Service\\Interface\\ILoanItemService.cs",
+              "RelativeToolTip": "Project - ConsoleApp (Library Management Application)\\Service\\Interface\\ILoanItemService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T09:22:56.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoanService.cs",
+              "DocumentMoniker": "C:\\Users\\Ravan\\source\\repos\\Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application)\\Service\\Implementation\\LoanService.cs",
+              "RelativeDocumentMoniker": "Project - ConsoleApp (Library Management Application)\\Service\\Implementation\\LoanService.cs",
+              "ToolTip": "C:\\Users\\Ravan\\source\\repos\\Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application)\\Service\\Implementation\\LoanService.cs",
+              "RelativeToolTip": "Project - ConsoleApp (Library Management Application)\\Service\\Implementation\\LoanService.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T09:13:25.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ILoanService.cs",
+              "DocumentMoniker": "C:\\Users\\Ravan\\source\\repos\\Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application)\\Service\\Interface\\ILoanService.cs",
+              "RelativeDocumentMoniker": "Project - ConsoleApp (Library Management Application)\\Service\\Interface\\ILoanService.cs",
+              "ToolTip": "C:\\Users\\Ravan\\source\\repos\\Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application)\\Service\\Interface\\ILoanService.cs",
+              "RelativeToolTip": "Project - ConsoleApp (Library Management Application)\\Service\\Interface\\ILoanService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T09:12:05.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BorrowerService.cs",
+              "DocumentMoniker": "C:\\Users\\Ravan\\source\\repos\\Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application)\\Service\\Implementation\\BorrowerService.cs",
+              "RelativeDocumentMoniker": "Project - ConsoleApp (Library Management Application)\\Service\\Implementation\\BorrowerService.cs",
+              "ToolTip": "C:\\Users\\Ravan\\source\\repos\\Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application)\\Service\\Implementation\\BorrowerService.cs",
+              "RelativeToolTip": "Project - ConsoleApp (Library Management Application)\\Service\\Implementation\\BorrowerService.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowD4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T15:34:21.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IBorrowerService.cs",
+              "DocumentMoniker": "C:\\Users\\Ravan\\source\\repos\\Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application)\\Service\\Interface\\IBorrowerService.cs",
+              "RelativeDocumentMoniker": "Project - ConsoleApp (Library Management Application)\\Service\\Interface\\IBorrowerService.cs",
+              "ToolTip": "C:\\Users\\Ravan\\source\\repos\\Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application)\\Service\\Interface\\IBorrowerService.cs",
+              "RelativeToolTip": "Project - ConsoleApp (Library Management Application)\\Service\\Interface\\IBorrowerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T15:32:51.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthorService.cs",
+              "DocumentMoniker": "C:\\Users\\Ravan\\source\\repos\\Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application)\\Service\\Implementation\\AuthorService.cs",
+              "RelativeDocumentMoniker": "Project - ConsoleApp (Library Management Application)\\Service\\Implementation\\AuthorService.cs",
+              "ToolTip": "C:\\Users\\Ravan\\source\\repos\\Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application)\\Service\\Implementation\\AuthorService.cs",
+              "RelativeToolTip": "Project - ConsoleApp (Library Management Application)\\Service\\Implementation\\AuthorService.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowBMAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T14:34:30.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IAuthorServices.cs",
+              "DocumentMoniker": "C:\\Users\\Ravan\\source\\repos\\Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application)\\Service\\Interface\\IAuthorServices.cs",
+              "RelativeDocumentMoniker": "Project - ConsoleApp (Library Management Application)\\Service\\Interface\\IAuthorServices.cs",
+              "ToolTip": "C:\\Users\\Ravan\\source\\repos\\Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application)\\Service\\Interface\\IAuthorServices.cs",
+              "RelativeToolTip": "Project - ConsoleApp (Library Management Application)\\Service\\Interface\\IAuthorServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T14:31:41.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "NotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\Ravan\\source\\repos\\Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application)\\MyException\\Common\\NotFoundException.cs",
+              "RelativeDocumentMoniker": "Project - ConsoleApp (Library Management Application)\\MyException\\Common\\NotFoundException.cs",
+              "ToolTip": "C:\\Users\\Ravan\\source\\repos\\Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application)\\MyException\\Common\\NotFoundException.cs",
+              "RelativeToolTip": "Project - ConsoleApp (Library Management Application)\\MyException\\Common\\NotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T14:15:58.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BookService.cs",
+              "DocumentMoniker": "C:\\Users\\Ravan\\source\\repos\\Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application)\\Service\\Implementation\\BookService.cs",
+              "RelativeDocumentMoniker": "Project - ConsoleApp (Library Management Application)\\Service\\Implementation\\BookService.cs",
+              "ToolTip": "C:\\Users\\Ravan\\source\\repos\\Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application)\\Service\\Implementation\\BookService.cs",
+              "RelativeToolTip": "Project - ConsoleApp (Library Management Application)\\Service\\Implementation\\BookService.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowDAAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T13:36:30.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IBookService.cs",
+              "DocumentMoniker": "C:\\Users\\Ravan\\source\\repos\\Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application)\\Service\\Interface\\IBookService.cs",
+              "RelativeDocumentMoniker": "Project - ConsoleApp (Library Management Application)\\Service\\Interface\\IBookService.cs",
+              "ToolTip": "C:\\Users\\Ravan\\source\\repos\\Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application)\\Service\\Interface\\IBookService.cs",
+              "RelativeToolTip": "Project - ConsoleApp (Library Management Application)\\Service\\Interface\\IBookService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T13:34:37.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "NotValidException.cs",
+              "DocumentMoniker": "C:\\Users\\Ravan\\source\\repos\\Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application)\\MyException\\Common\\NotValidException.cs",
+              "RelativeDocumentMoniker": "Project - ConsoleApp (Library Management Application)\\MyException\\Common\\NotValidException.cs",
+              "ToolTip": "C:\\Users\\Ravan\\source\\repos\\Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application)\\MyException\\Common\\NotValidException.cs",
+              "RelativeToolTip": "Project - ConsoleApp (Library Management Application)\\MyException\\Common\\NotValidException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T14:08:23.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ravan\\source\\repos\\Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application)\\Program.cs",
+              "RelativeDocumentMoniker": "Project - ConsoleApp (Library Management Application)\\Program.cs",
+              "ToolTip": "C:\\Users\\Ravan\\source\\repos\\Project - ConsoleApp (Library Management Application)\\Project - ConsoleApp (Library Management Application)\\Program.cs",
+              "RelativeToolTip": "Project - ConsoleApp (Library Management Application)\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T11:59:38.611Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
