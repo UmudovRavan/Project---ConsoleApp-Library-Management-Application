@@ -17,7 +17,6 @@ namespace Project___ConsoleApp__Library_Management_Application_.Service.Implemen
         {
             if (borrower is null) throw new ArgumentNullException("Borrower is null");
             if (string.IsNullOrWhiteSpace(borrower.Name)) throw new ArgumentNullException("Borrower name is null");
-            if (borrower.Id < 1) throw new NotValidException("Id is less than 1");
             if (borrower.Email is null) throw new ArgumentNullException("Email is null");
             
             IBorrowerRepository borrowerRepository = new BorrowerRepository();
@@ -69,16 +68,16 @@ namespace Project___ConsoleApp__Library_Management_Application_.Service.Implemen
             var borrowerUpdate = borrowerRepository.GetById(id);
 
             if(borrowerUpdate is null) throw new NullReferenceException();
-            if (id < 1) throw new NotValidException("Idis less than 1");
+            if (id < 1) throw new NotValidException("Id is less than 1");
             if (borrower is null) throw new NullReferenceException();
             if (string.IsNullOrWhiteSpace(borrower.Name)) throw new NullReferenceException();
 
             borrowerUpdate.Name = borrower.Name;
-            borrowerUpdate.UpdateAt = borrower.UpdateAt;
-            borrowerUpdate.CreateTime = borrower.CreateTime;
-            borrowerUpdate.IsDeleted = borrower.IsDeleted;
+            borrowerUpdate.UpdateAt = DateTime.UtcNow.AddHours(4);
+            
             borrowerUpdate.Email = borrower.Email;
-            borrowerUpdate.Loans = borrower.Loans;
+            
+            borrowerRepository.Commit();
         }
     }
 }

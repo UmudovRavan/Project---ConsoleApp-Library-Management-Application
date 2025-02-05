@@ -41,6 +41,23 @@ namespace Project___ConsoleApp__Library_Management_Application_
                     case "2":
                         BookAction(bookService);
                         break;
+                    case "3":
+                        BorrowerAction(borrowerService);
+                        break;
+                        case "6":
+                        MostBorrowedBook(loanService);
+                        break;
+                    case "9":
+                        Console.WriteLine("Enter book title");
+                        string? title = Console.ReadLine();
+
+                        if (string.IsNullOrWhiteSpace(title))
+                        {
+                            Console.WriteLine("Title connot be empty");
+                            break;
+                        }
+                        var filterBook = FilterBooksByTitle(bookService,title.Trim());
+                        break;
 
                 }
 
@@ -191,7 +208,7 @@ namespace Project___ConsoleApp__Library_Management_Application_
                     case "1":
                         foreach (var item in borrowerService.GetAll())
                         {
-                            Console.WriteLine($"Name: {item.Name},Email: {item.Email}");
+                            Console.WriteLine($"Id: {item.Id},Name: {item.Name},Email: {item.Email}");
                         }
                         break;
                     case "2":
@@ -205,9 +222,114 @@ namespace Project___ConsoleApp__Library_Management_Application_
                             UpdateAt = DateTime.UtcNow.AddHours(4)
                         });
                         break;
+                        case"3":
+                        Console.WriteLine("Update borrower,enter borrower ID:");
+                        int borrowerId = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Enter new borrower: Name,Email");
+                        borrowerService.Update(borrowerId, new Borrower
+                        {
+                            Name = Console.ReadLine(),
+                            Email = Console.ReadLine()
+                        });
+                        break;
+                        case "4":
+                        Console.WriteLine("The ID you want to delete");
+                        int delete = int.Parse(Console.ReadLine());
+                        borrowerService.Delete(delete);
+                        break;
+                    case "0":
+                        Console.WriteLine("Exit program");
+                        return;
+                    default:
+                        Console.WriteLine("Wrong choice");
+                        break;
                 }
 
             }
+        }
+
+        static List<Book> FilterBooksByTitle(IBookService bookService,string title)
+        {
+            if(string.IsNullOrWhiteSpace(title))
+            {
+                throw new ArgumentNullException(nameof(title));
+            }
+
+            var allBooks = bookService.GetAll();
+            if(allBooks == null || allBooks.Count == 0)
+            {
+                Console.WriteLine("Book not found");
+                return new List<Book>();
+            }
+
+            var filteredBooks = allBooks
+                .Where(x => !string.IsNullOrWhiteSpace(x.Title) &&
+                x.Title.Contains(title,StringComparison.OrdinalIgnoreCase))
+                .ToList();
+            if(filteredBooks.Count == 0)
+            {
+                Console.WriteLine("Not found books");
+            }
+            return filteredBooks;
+        }
+
+        static void FilterBooksByAuthor(IBookService bookService,string authorName)
+        {
+            if (string.IsNullOrWhiteSpace(authorName))
+            {
+                throw new ArgumentNullException();
+            }
+            var books = bookService.GetAll();   
+
+            
+        }
+
+        static void BorrowBook(ILoanService loanService,IBookService bookService,IBorrowerService borrowerService)
+        {
+            List<LoanItem> selectBooks = new List<LoanItem>();
+            Borrower selectBorrower = null;
+
+            while (true)
+            {
+                Console.Clear();
+                Console.WriteLine("Available books: ");
+
+                var books = bookService.GetAll() ?? new List<Book>();
+                
+            }
+        }
+
+        static void MostBorrowedBook(ILoanService loanService)
+        {
+            var allLoans = loanService.GetAll();
+
+            if( allLoans == null || !allLoans.Any())
+            {
+                Console.WriteLine("No loans found");
+                return ;
+            }
+
+            var mostBorrowedBooks = allLoans
+                .SelectMany(x => x.LoanItems)
+                .GroupBy(x => x.BookId)
+                .OrderByDescending(x => x.Count())
+                .FirstOrDefault();
+
+            if( mostBorrowedBooks == null)
+            {
+                Console.WriteLine("Books have been borrowed");
+                return ;
+            }
+            var mostBook = mostBorrowedBooks.FirstOrDefault()?.Book;
+            int borrowCount = mostBorrowedBooks.Count();
+
+            if(mostBook == null)
+            {
+                Console.WriteLine("Error");
+                return ;
+            }
+
+            Console.WriteLine($"Most borrowed book: {mostBook.Title},{borrowCount} times borrowed");
         }
     }
 }
