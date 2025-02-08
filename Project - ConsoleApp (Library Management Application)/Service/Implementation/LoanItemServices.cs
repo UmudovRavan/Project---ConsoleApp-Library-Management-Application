@@ -17,7 +17,7 @@ namespace Project___ConsoleApp__Library_Management_Application_.Service.Implemen
         public void Create(LoanItem loanItem)
         {
             if (loanItem is null) throw new ArgumentNullException("LoanItem is null");
-            if (loanItem.Id < 1) throw new NotValidException("Id is less than 1");
+           
             if (loanItem.Loan is null) throw new ArgumentNullException("Loan is null");
 
             ILoanItemRepository loanItemRepository = new LoanItemRepository();
@@ -36,7 +36,7 @@ namespace Project___ConsoleApp__Library_Management_Application_.Service.Implemen
             var data = loanItemRepository.GetById(id);
 
             if (data is null) throw new NullReferenceException();
-            if (id < 1) throw new NotValidException("Id is less than 1");
+           
 
             data.IsDeleted = true;
             data.UpdateAt = DateTime.UtcNow.AddHours(4);
@@ -56,7 +56,7 @@ namespace Project___ConsoleApp__Library_Management_Application_.Service.Implemen
             ILoanItemRepository loanItemRepository = new LoanItemRepository();
 
             if (loanItemRepository.GetById(id) is null) throw new NotValidException();
-            if (id < 1) throw new NotValidException("Id is less than 1");
+           
 
             return loanItemRepository.GetById(id);
 
@@ -68,7 +68,7 @@ namespace Project___ConsoleApp__Library_Management_Application_.Service.Implemen
             var loanItemUpdate = loanItemRepository.GetById(id);
 
             if (loanItemUpdate is null) throw new NullReferenceException();
-            if (id < 1) throw new NotValidException("Idis less than 1");
+
             if (loanItem is null) throw new NullReferenceException();
             if (loanItem.Id < 1) throw new NotValidException();
 

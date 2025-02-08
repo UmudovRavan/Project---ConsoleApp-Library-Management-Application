@@ -35,7 +35,7 @@ namespace Project___ConsoleApp__Library_Management_Application_.Service.Implemen
             var data = borrowerRepository.GetById(id);
 
             if (data is null) throw new NullReferenceException();
-            if (id < 1) throw new NotValidException("Idis less than 1");
+           
 
             data.IsDeleted = true;
             data.UpdateAt = DateTime.UtcNow.AddHours(4);
@@ -68,7 +68,7 @@ namespace Project___ConsoleApp__Library_Management_Application_.Service.Implemen
             var borrowerUpdate = borrowerRepository.GetById(id);
 
             if(borrowerUpdate is null) throw new NullReferenceException();
-            if (id < 1) throw new NotValidException("Id is less than 1");
+            
             if (borrower is null) throw new NullReferenceException();
             if (string.IsNullOrWhiteSpace(borrower.Name)) throw new NullReferenceException();
 
